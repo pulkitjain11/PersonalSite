@@ -361,6 +361,8 @@ Keep myself up to date with the latest happenings and developments across the wo
           <!-- Github -->
           <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/pulkitjain11" role="button"
             ><i class="bi bi-github"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="mailto:pulkitjainjk@gmail.com" role="button"
+              ><i class="bi bi-envelope"></i></a>
         </section>
         <!-- Section: Social media -->
       </div>
@@ -379,8 +381,6 @@ Keep myself up to date with the latest happenings and developments across the wo
 
     <script type="text/javascript">
     let mybutton = document.getElementById("btn-back-to-top");
-
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
 scrollFunction();
 };
@@ -395,7 +395,6 @@ if (
   mybutton.style.display = "none";
 }
 }
-// When the user clicks on the button, scroll to the top of the document
 mybutton.addEventListener("click", backToTop);
 
 function backToTop() {
@@ -439,11 +438,7 @@ window.addEventListener("scroll", callbackFunc);
   (function () {
   "use strict";
 
-  // define variables
   var items = document.querySelectorAll(".timeline1 li");
-
-  // check if an element is in viewport
-  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
   function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
     return (
@@ -462,8 +457,6 @@ window.addEventListener("scroll", callbackFunc);
       }
     }
   }
-
-  // listen for events
   window.addEventListener("load", callbackFunc);
   window.addEventListener("resize", callbackFunc);
   window.addEventListener("scroll", callbackFunc);
