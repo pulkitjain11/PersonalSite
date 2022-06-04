@@ -335,6 +335,74 @@ Keep myself up to date with the latest happenings and developments across the wo
       </ul>
     </section>
 
+    <footer class="bg-dark text-center text-white" id="Contact">
+      <div class="text-center" style="padding-top:10px">
+        <h3>Get In Touch </h3>
+      </div>
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/pulkit_jain_11/" role="button"
+            ><i class="bi bi-instagram"></i></a>
+
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/pulkitjain11/" role="button"
+            ><i class="bi bi-linkedin"></i></a>
+
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/11pulkitjain/" role="button"
+            ><i class="bi bi-facebook"></i></a>
+
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/pulkitjainjk" role="button"
+            ><i class="bi bi-twitter"></i></a>
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/pulkitjain11" role="button"
+            ><i class="bi bi-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright: Pulkit Jain
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script type="text/javascript">
+    let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+scrollFunction();
+};
+
+function scrollFunction() {
+if (
+  document.body.scrollTop > 20 ||
+  document.documentElement.scrollTop > 20
+) {
+  mybutton.style.display = "block";
+} else {
+  mybutton.style.display = "none";
+}
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+    </script>
 
 <script type="text/javascript">
   var items = document.querySelectorAll(".timeline li");
@@ -404,43 +472,5 @@ window.addEventListener("scroll", callbackFunc);
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
-<footer class="bg-dark text-center text-white" id="Contact">
-  <div class="text-center" style="padding-top:10px">
-    <h3>Get In Touch </h3>
-  </div>
-  <!-- Grid container -->
-  <div class="container p-4 pb-0">
-    <!-- Section: Social media -->
-    <section class="mb-4">
-      <!-- Instagram -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/pulkit_jain_11/" role="button"
-        ><i class="bi bi-instagram"></i></a>
-
-      <!-- Linkedin -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/pulkitjain11/" role="button"
-        ><i class="bi bi-linkedin"></i></a>
-
-      <!-- Facebook -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/11pulkitjain/" role="button"
-        ><i class="bi bi-facebook"></i></a>
-
-      <!-- Twitter -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/pulkitjainjk" role="button"
-        ><i class="bi bi-twitter"></i></a>
-      <!-- Github -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/pulkitjain11" role="button"
-        ><i class="bi bi-github"></i></a>
-    </section>
-    <!-- Section: Social media -->
-  </div>
-  <!-- Grid container -->
-
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2022 Copyright: Pulkit Jain
-  </div>
-  <!-- Copyright -->
-</footer>
   </body>
 </html>
