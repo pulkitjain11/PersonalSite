@@ -1,6 +1,4 @@
 <!-- BACK TO TOP BUTTON -->
-
-    // <script type="text/javascript">
     let mybutton = document.getElementById("btn-back-to-top");
 window.onscroll = function () {
 scrollFunction();
@@ -22,13 +20,10 @@ function backToTop() {
 document.body.scrollTop = 0;
 document.documentElement.scrollTop = 0;
 }
-    // </script>
 
-    <!-- VERTICAL TIMELINE -->
+<!-- VERTICAL TIMELINE -->
 
-// <script type="text/javascript">
-  var items = document.querySelectorAll(".timeline li");
-
+var items = document.querySelectorAll(".timeline li");
 function isElementInViewport(el) {
   var rect = el.getBoundingClientRect();
   return (
@@ -38,7 +33,6 @@ function isElementInViewport(el) {
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
-
 function callbackFunc() {
   for (var i = 0; i < items.length; i++) {
     if (isElementInViewport(items[i])) {
@@ -50,16 +44,12 @@ function callbackFunc() {
     }
   }
 }
-
 window.addEventListener("load", callbackFunc);
 window.addEventListener("scroll", callbackFunc);
-// </script>
 
 <!-- TImeline -->
-// <script type="text/javascript">
   (function () {
   "use strict";
-
   var items = document.querySelectorAll(".timeline1 li");
   function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
@@ -84,4 +74,31 @@ window.addEventListener("scroll", callbackFunc);
   window.addEventListener("scroll", callbackFunc);
 })();
 
-// </script>
+<!-- Projects-->
+
+let slider = tns({
+  container: ".my-slider",
+  "slideBy" : "1",
+  "speed" : 400,
+  "nav" :false,
+  autoplay :true,
+  controls: false,
+  autoplayButtonOutput : false,
+  responsive: {
+    1600: {
+      items: 4,
+      gutter :20
+    },
+    1024:{
+      items: 3,
+      gutter :20
+    },
+    768: {
+      items: 2,
+      gutter:20
+    },
+    480:{
+      items:1
+    }
+  }
+})
