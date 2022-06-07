@@ -6,6 +6,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js" integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" integrity="sha512-eMxdaSf5XW3ZW1wZCrWItO2jZ7A9FhuZfjVdztr7ZsKNOmt6TUMTQgfpNoVRyfPE5S9BC0A4suXzsGSrAOWcoQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
 
@@ -27,10 +29,10 @@
         <a class="nav-link" href="#education">Education</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Achievements and Certifications</a>
+        <a class="nav-link" href="#Certifications">Achievements and Certifications</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Projects</a>
+        <a class="nav-link" href="#Projects">Projects</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#Contact">Contact</a>
@@ -335,26 +337,90 @@ Keep myself up to date with the latest happenings and developments across the wo
       </ul>
     </section>
 
+<!-- PROJECTS -->
+<section id="Projects">
+  <div class="container">
+    <div class="subcontainer">
+      <div class="slider-wrapper">
+        <div>
+          <h2>Projects</h2>
+        </div>
+        <br>
+        <div class="my-slider">
+          <div>
+            <div class="slide">
+              <div class="slide-img img-1">
+                <a href="#">Learn More</a>
+              </div>
+              <div>
+                <h3>Project1 Name</h3>
+                <p>Details about the project</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="slide">
+              <div class="slide-img img-2">
+                <a href="#">Learn More</a>
+              </div>
+              <div>
+                <h3>Project2 Name</h3>
+                <p>Details about the project</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="slide">
+              <div class="slide-img img-3">
+                <a href="#">Learn More</a>
+              </div>
+              <div>
+                <h3>Project3 Name</h3>
+                <p>Details about the project</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="slide">
+              <div class="slide-img img-4">
+                <a href="#">Learn More</a>
+              </div>
+              <div>
+                <h3>Project4 Name</h3>
+                <p>Details about the project</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
     <footer class="bg-dark text-center text-white" id="Contact">
       <div class="text-center" style="padding-top:10px">
         <h3>Get In Touch </h3>
       </div>
-      <!-- Grid container -->
       <div class="container p-4 pb-0">
-        <!-- Section: Social media -->
         <section class="mb-4">
           <!-- Instagram -->
           <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/pulkit_jain_11/" role="button"
             ><i class="bi bi-instagram"></i></a>
-
           <!-- Linkedin -->
           <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/pulkitjain11/" role="button"
             ><i class="bi bi-linkedin"></i></a>
-
           <!-- Facebook -->
           <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/11pulkitjain/" role="button"
             ><i class="bi bi-facebook"></i></a>
-
           <!-- Twitter -->
           <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/pulkitjainjk" role="button"
             ><i class="bi bi-twitter"></i></a>
@@ -364,20 +430,19 @@ Keep myself up to date with the latest happenings and developments across the wo
             <a class="btn btn-outline-light btn-floating m-1" href="mailto:pulkitjainjk@gmail.com" role="button"
               ><i class="bi bi-envelope"></i></a>
         </section>
-        <!-- Section: Social media -->
       </div>
-      <!-- Grid container -->
 
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         © 2022 Copyright: Pulkit Jain
       </div>
-      <!-- Copyright -->
     </footer>
 
     <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
       <i class="bi bi-arrow-up"></i>
     </button>
+
+<!-- BACK TO TOP BUTTON -->
 
     <script type="text/javascript">
     let mybutton = document.getElementById("btn-back-to-top");
@@ -402,6 +467,8 @@ document.body.scrollTop = 0;
 document.documentElement.scrollTop = 0;
 }
     </script>
+
+    <!-- VERTICAL TIMELINE -->
 
 <script type="text/javascript">
   var items = document.querySelectorAll(".timeline li");
@@ -432,8 +499,7 @@ window.addEventListener("load", callbackFunc);
 window.addEventListener("scroll", callbackFunc);
 </script>
 
-
-<!-- TImeline1 -->
+<!-- TImeline -->
 <script type="text/javascript">
   (function () {
   "use strict";
@@ -463,7 +529,6 @@ window.addEventListener("scroll", callbackFunc);
 })();
 
 </script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>

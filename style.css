@@ -87,7 +87,7 @@
 	 visibility: visible;
 	 opacity: 1;
 }
- @media screen and (max-width: 900px) {
+ @media screen and (max-width: 1600px) {
 	 .timeline ul li div {
 		 width: 250px;
 		 flex-direction: column;
@@ -376,4 +376,72 @@ time {
   bottom: 20px;
   right: 20px;
   display: none;
+}
+
+
+
+/* Projects */
+#slider{
+	height: 500px;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	width: 1600px;
+	margin: auto;
+}
+
+.subcontainer{
+	width: 85%;
+	margin: auto;
+}
+.slide-img{
+	width: 100%;
+	height: 275px;
+	border-radius: 5px;
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+}
+
+.slide-img:hover{
+	box-shadow: 0 0 0 200px rgba(0,0,0,0.9) inset;
+}
+
+.slide-img a{
+	opacity: 0;
+	text-decoration: none;
+	transform: scale(0);
+	transition: 0.8s;
+	font-size: 1.5rem;
+	color: white;
+}
+
+.slide-img:hover a{
+	opacity: 1;
+	transform: scale(1);
+}
+.img-1{
+	background-image: url("https://www.nhm.ac.uk/content/dam/nhmwww/discover/wpy-57/Andr%C3%A9s-sunflowers.jpg.thumb.1160.1160.jpg");
+}
+.img-2{
+	background-image: url("https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3Vuc2V0JTIwbGFuZHNjYXBlfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+}
+.img-3{
+	background-image: url("https://images.unsplash.com/photo-1586348943529-beaae6c28db9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8&w=1000&q=80");
+}
+.img-4{
+	background-image: url("https://www.wallpaperflare.com/static/142/192/37/nature-photography-sunset-scenery-wallpaper.jpg");
+}
+@media(max-width:1600px){
+	.container{
+		width: 100%;
+	}
 }
