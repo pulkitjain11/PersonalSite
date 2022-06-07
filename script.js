@@ -79,7 +79,7 @@ window.addEventListener("scroll", callbackFunc);
 let slider = tns({
   container: ".my-slider",
   "slideBy" : "1",
-  "speed" : 400,
+  "speed" : 600,
   "nav" :false,
   autoplay :true,
   controls: false,
