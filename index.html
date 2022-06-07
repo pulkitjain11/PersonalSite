@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" integrity="sha512-eMxdaSf5XW3ZW1wZCrWItO2jZ7A9FhuZfjVdztr7ZsKNOmt6TUMTQgfpNoVRyfPE5S9BC0A4suXzsGSrAOWcoQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
       <img src="Photos/DP.png" alt="Display Picture" style="width:40px;margin-left:15px;margin-right:0px" class="navbar-brand">
   <a class="navbar-brand" href="#">Pulkit Jain</a>
@@ -441,94 +440,7 @@ Keep myself up to date with the latest happenings and developments across the wo
     <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
       <i class="bi bi-arrow-up"></i>
     </button>
-
-<!-- BACK TO TOP BUTTON -->
-
-    <script type="text/javascript">
-    let mybutton = document.getElementById("btn-back-to-top");
-window.onscroll = function () {
-scrollFunction();
-};
-
-function scrollFunction() {
-if (
-  document.body.scrollTop > 20 ||
-  document.documentElement.scrollTop > 20
-) {
-  mybutton.style.display = "block";
-} else {
-  mybutton.style.display = "none";
-}
-}
-mybutton.addEventListener("click", backToTop);
-
-function backToTop() {
-document.body.scrollTop = 0;
-document.documentElement.scrollTop = 0;
-}
-    </script>
-
-    <!-- VERTICAL TIMELINE -->
-
-<script type="text/javascript">
-  var items = document.querySelectorAll(".timeline li");
-
-function isElementInViewport(el) {
-  var rect = el.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-}
-
-function callbackFunc() {
-  for (var i = 0; i < items.length; i++) {
-    if (isElementInViewport(items[i])) {
-      if(!items[i].classList.contains("in-view")){
-        items[i].classList.add("in-view");
-      }
-    } else if(items[i].classList.contains("in-view")) {
-        items[i].classList.remove("in-view");
-    }
-  }
-}
-
-window.addEventListener("load", callbackFunc);
-window.addEventListener("scroll", callbackFunc);
-</script>
-
-<!-- TImeline -->
-<script type="text/javascript">
-  (function () {
-  "use strict";
-
-  var items = document.querySelectorAll(".timeline1 li");
-  function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
-
-  function callbackFunc() {
-    for (var i = 0; i < items.length; i++) {
-      if (isElementInViewport(items[i])) {
-        items[i].classList.add("in-view");
-      }
-    }
-  }
-  window.addEventListener("load", callbackFunc);
-  window.addEventListener("resize", callbackFunc);
-  window.addEventListener("scroll", callbackFunc);
-})();
-
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
 </html>
