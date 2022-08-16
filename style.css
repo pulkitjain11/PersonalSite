@@ -144,7 +144,7 @@
 
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
@@ -448,7 +448,7 @@ time {
 .img-4{
 	background-image: url("Photos/sdn.PNG");
 }
-@media(max-width:1300px){
+@media(max-width:1000px){
 	.container{
 		width: 100%;
 	}
